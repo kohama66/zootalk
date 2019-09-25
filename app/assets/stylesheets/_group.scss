@@ -1,0 +1,17 @@
+.main {
+  background-color: rgb(47, 0, 255);
+  height: 100vh;
+  width: calc(100% - 302px);
+  float: right;
+  &__groups{
+    background-color: aqua;
+    height: 50%;
+    width: 50%;
+    font-size: 10px;
+    color: black;
+  &--icon{
+    padding: 50px;
+  }
+  }
+
+}
