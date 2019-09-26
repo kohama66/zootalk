@@ -11,8 +11,14 @@
     width: 50%;
     color: black;
     float: left;
+    font-weight: bold;
+    font-size: 25px;
   &--icon{
-    padding: 50px;
+    padding: 50px 20px 0 40px;
+  }
+  &--name{
+    float: right;
+    padding: 50px 100px 20px 0;
   }
   }
 
