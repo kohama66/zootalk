@@ -1,8 +1,8 @@
 .main
   = render partial: "message", collection: @messages
-  = form_with model: [@group,@message],class: "message-form" do |f|
+  = form_with model: [@group,@message],class: "message-form",local: true do |f|
     = f.text_field :messages, placeholder: "メッセージを入れてね", class: "message-form__field"
     %label(for="message-form__botton" class="message-form__botton--icon")
       = fa_icon 'paw' 
-    = f.submit class: "message-form__botton"
+    = f.submit class: "message-form__botton", id: "message-form__botton"
       

@@ -10,5 +10,12 @@ class MessagesController < ApplicationController
   end  
 
   def create
+    Message.create(message_params)
+    redirect_back(fallback_location: group_messages_path)
   end  
+
+  private
+  def message_params
+    params.require(:message).permit(:messages, :image).merge(group_id: params[:group_id], user_id: current_user.id)
+  end
 end
