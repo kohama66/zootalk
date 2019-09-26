@@ -11,3 +11,21 @@
     font-size: 25px;
   }
 }
+.message-form{
+  position: fixed;
+  left: 30%;
+  bottom: 5px;
+  z-index: 1;
+  &__field{
+    height: 38px;
+    width: 500px;
+  }
+  &__botton{
+    display: none;
+  &--icon{
+    position: absolute;
+    right: -40px; 
+    font-size: 30px;
+  }
+  }
+}
