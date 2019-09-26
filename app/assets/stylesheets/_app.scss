@@ -7,7 +7,7 @@
   top: 0;
 }
 .mypage {
-  height: 100vh;
+  height: calc(100vh + 50px);
   width: 300px;
   background-color: rgb(134, 218, 166);
   border-right: groove medium rgb(146, 238, 181);
