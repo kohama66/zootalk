@@ -5,7 +5,21 @@
   border-bottom: solid 3px rgb(23, 114, 91);
   position: fixed;
   top: 0;
+  text-align: center;
 }
+.title{
+  color: rgb(238, 234, 234);
+  font-size: 40px;
+  line-height: 50px; 
+  }
+  .login{
+    color: rgb(238, 234, 234);
+    font-size: 20px;
+    line-height: 50px;
+    position: absolute;
+    left: 30px;
+    
+  }
 .mypage {
   height: calc(100vh + 50px);
   width: 300px;
