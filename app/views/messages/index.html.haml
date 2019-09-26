@@ -1,3 +1,6 @@
 .main
-  = render partial: "message", collection: @message
+  = render partial: "message", collection: @messages
+  = form_with model: [@group,@message] do |f|
+    = f.text_field :messages
+    = f.submit
       
