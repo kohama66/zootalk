@@ -1,0 +1,13 @@
+.message{
+  height: 120px;
+  
+  &__user-icon{
+    padding: 10px 30px 10px 10px; 
+    float: left;
+  }
+  &__content{
+    line-height: 120px;
+    font-weight: normal;
+    font-size: 25px;
+  }
+}
