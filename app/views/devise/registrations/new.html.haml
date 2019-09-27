@@ -18,7 +18,7 @@
       = f.label :password_confirmation
       %br/
       = f.password_field :password_confirmation, autocomplete: "new-password"
-    .field
+    .radio-button
       = f.radio_button :icon_id, 1
       = f.radio_button :icon_id, 2
       = f.radio_button :icon_id, 3
@@ -30,9 +30,14 @@
       = f.submit "Sign up", class: "btn btn-primary"
   = render "devise/shared/links"
   .icon-select
-    = image_tag "dog.png", :size =>'200x200'
-    = image_tag "cat.png", :size =>'200x200'
-    = image_tag "fox.png", :size =>'200x200'
-    = image_tag "bird.png", :size =>'200x200'
-    = image_tag "elf.png", :size =>'200x200'    
+    %label(for="user_icon_id_1")
+      = image_tag "dog.png", :size =>'200x200'
+    %label(for="user_icon_id_2")  
+      = image_tag "cat.png", :size =>'200x200'
+    %label(for="user_icon_id_3")  
+      = image_tag "fox.png", :size =>'200x200'
+    %label(for="user_icon_id_4")  
+      = image_tag "bird.png", :size =>'200x200'
+    %label(for="user_icon_id_5")  
+      = image_tag "elf.png", :size =>'200x200'    
     
