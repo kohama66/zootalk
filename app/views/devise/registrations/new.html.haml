@@ -18,6 +18,14 @@
       = f.label :password_confirmation
       %br/
       = f.password_field :password_confirmation, autocomplete: "new-password"
+    .field
+      = f.radio_button :icon_id, 1
+      = f.radio_button :icon_id, 2
+      = f.radio_button :icon_id, 3
+      = f.radio_button :icon_id, 4
+      = f.radio_button :icon_id, 5
+    
+    
     .actions
       = f.submit "Sign up", class: "btn btn-primary"
   = render "devise/shared/links"
