@@ -14,9 +14,10 @@
     %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
   %body
     .header
-      =link_to "log in", new_user_registration_path, class: "login" unless user_signed_in?
-      =link_to "log out", destroy_user_session_path, method: :delete, class: "login" if user_signed_in?
+      =link_to "新規登録", new_user_registration_path, class: "new-user" unless user_signed_in?
+      =link_to "ログアウト", destroy_user_session_path, method: :delete, class: "new-user" if user_signed_in?
       =link_to "zooTalk", "/", class: "title"
+      =link_to "ログイン", new_user_session_path, class: "login"
     = yield
     .mypage
     .footer

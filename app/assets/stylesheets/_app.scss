@@ -12,14 +12,20 @@
   font-size: 40px;
   line-height: 50px; 
   }
-  .login{
-    color: rgb(238, 234, 234);
-    font-size: 20px;
-    line-height: 50px;
-    position: absolute;
-    left: 30px;
-    
+.new-user{
+  color: rgb(238, 234, 234);
+  font-size: 20px;
+  line-height: 50px;
+  position: absolute;
+  left: 30px;
   }
+.login{
+  color: rgb(238, 234, 234);
+  font-size: 20px;
+  line-height: 50px;
+  position: absolute;
+  right: 30px;
+}  
 .mypage {
   height: calc(100vh + 50px);
   width: 300px;
