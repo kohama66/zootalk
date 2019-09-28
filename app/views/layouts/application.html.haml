@@ -26,5 +26,5 @@
         .mypage-main__icon
           = image_tag current_user.icon.image, :size =>'200x200'  if user_signed_in?
         .mypage-main__group
-          = link_to "グループを作る"  
+          = link_to "グループを作る", new_group_path
     .footer

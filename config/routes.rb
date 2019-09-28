@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   root to: "groups#index"
 
   resources :users, only: [:new]
-  resources :groups, only: [:index, :create] do
+  resources :groups, only: [:new, :index, :create] do
     resources :messages, only: [:index, :new, :create]
   end
 end
