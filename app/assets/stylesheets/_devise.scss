@@ -16,6 +16,12 @@ input{
   width: 120px;
   margin: 0 0 0 40%;
 }
+.icon-message{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(7, 141, 112);
+
+}
 .icon-select{
   position: absolute;
   left: 330px;
@@ -24,7 +30,7 @@ input{
   overflow: auto;
 }
 .radio-button{
-  // display: none;
+  display: none;
 }
 .popup1{
   z-index: 2;

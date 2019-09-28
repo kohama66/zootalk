@@ -20,7 +20,6 @@ $(function(){
     e.preventDefault();
     $(".popup5").addClass("show");
   })      
-  
   $('.card-action').on('click', function(){
     $(".popup1").removeClass("show");
     $(".popup2").removeClass("show");
