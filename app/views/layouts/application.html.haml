@@ -20,4 +20,9 @@
       =link_to "ログイン", new_user_session_path, class: "login"
     = yield
     .mypage
+      .mypage-main
+        .mypage-main__you
+          YOU
+        .mypage-main__icon
+          = image_tag current_user.icon.image, :size =>'200x200'
     .footer

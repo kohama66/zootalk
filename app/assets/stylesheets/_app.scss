@@ -30,7 +30,20 @@
   height: calc(100vh + 50px);
   width: 300px;
   background-color: rgb(134, 218, 166);
-  border-right: groove medium rgb(146, 238, 181);
+  border-right: solid medium rgb(127, 207, 158);
+}
+.mypage-main{
+  &__you{
+    font-size: 50px;
+    padding: 70px 0 20px 0;
+    text-align: center;
+    color: rgb(238, 234, 234);
+    border-bottom: solid medium rgb(127, 207, 158);
+  }
+  &__icon{
+    padding: 50px 50px 60px;
+    border-bottom: solid medium rgb(127, 207, 158);
+  }
 }
 .footer {
   height: 50px;
