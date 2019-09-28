@@ -25,26 +25,81 @@
       = f.submit "Sign up", class: "btn btn-primary"
   = render "devise/shared/links"
   .icon-select
-    = image_tag "dog.png", :size =>'200x200', id: "dog-icon"
-    %label(for="user_icon_id_2")  
-      = image_tag "cat.png", :size =>'200x200'
+    = image_tag "dog.png", :size =>'200x200', id: 1
+    = image_tag "cat.png", :size =>'200x200', id: 2
     %label(for="user_icon_id_3")  
-      = image_tag "fox.png", :size =>'200x200'
+      = image_tag "fox.png", :size =>'200x200', id: 3
     %label(for="user_icon_id_4")  
-      = image_tag "bird.png", :size =>'200x200'
+      = image_tag "bird.png", :size =>'200x200', id: 4
     %label(for="user_icon_id_5")  
-      = image_tag "elf.png", :size =>'200x200'    
-.popup
-  .popup__message
+      = image_tag "elf.png", :size =>'200x200', id: 5    
+.popup1
+  .popup1__message
     .row
       .col.s12.m6
         .card.blue-grey
           .card-content.white-text
             %p
-              アイコンは 犬 でよろしいですか？
+              アイコンは いぬ でよろしいですか？
             %p
               後から変更することは出来ません
           .card-action
             %label(for="user_icon_id_1")
               はい
-              いいえ
+            いいえ
+.popup2
+  .popup2__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは ねこ でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_2")
+              はい
+            いいえ            
+.popup3
+  .popup3__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは きつね でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_3")
+              はい
+            いいえ           
+.popup4
+  .popup4__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは 小鳥 でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_4")
+              はい
+            いいえ           
+.popup5
+  .popup5__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは ぞう でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_5")
+              はい
+            いいえ                                               
