@@ -1,3 +1,4 @@
+$(document).on('turbolinks:load', function(){
 $(function(){
   
   $('#1').on('click', function(e){
@@ -27,4 +28,5 @@ $(function(){
     $(".popup4").removeClass("show");
     $(".popup5").removeClass("show");
     })
+})
 })

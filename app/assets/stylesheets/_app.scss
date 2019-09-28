@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   text-align: center;
+  z-index: 1;
 }
 .title{
   color: rgb(238, 234, 234);
@@ -27,6 +28,7 @@
   right: 30px;
 }  
 .mypage {
+  position: fixed;
   height: calc(100vh + 50px);
   width: 300px;
   background-color: rgb(134, 218, 166);
