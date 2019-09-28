@@ -16,15 +16,18 @@
 .message-form{
   position: fixed;
   left: 30%;
-  bottom: 5px;
+  bottom: -2px;
   z-index: 1;
+  font-size: 22px;
   &__field{
     height: 38px;
     width: 500px;
+    background-color: white;
   }
   &__botton{
     display: none;
   &--icon{
+    color: rgb(235, 114, 15);
     position: absolute;
     right: -40px; 
     font-size: 30px;
