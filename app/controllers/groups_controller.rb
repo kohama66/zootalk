@@ -5,11 +5,10 @@ class GroupsController < ApplicationController
 
   def new
     @group = Group.new
-    @users = User.where.not(icon_id: current_user.icon_id).limit(4)
+    @users = User.where.not(icon_id: current_user.icon_id).order("RANDOM()").limit(4)
   end
 
   def create
-    binding.pry
     Group.create(group_params)
   end
 
@@ -18,5 +17,4 @@ class GroupsController < ApplicationController
   def group_params
     params.require(:group).permit(:name, { :user_ids => [] } )
   end 
-  # (:name, { :user_ids => [] }, :group_id )
 end

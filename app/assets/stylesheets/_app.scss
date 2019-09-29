@@ -2,7 +2,6 @@
   height: 50px;
   width: 100%;
   background-color: rgb(30, 143, 114);
-  border-bottom: solid 3px rgb(23, 114, 91);
   position: fixed;
   top: 0;
   text-align: center;
@@ -22,7 +21,7 @@
   }
 .login{
   color: rgb(238, 234, 234);
-  font-size: 20px;
+  font-size: 15px;
   line-height: 50px;
   position: absolute;
   right: 30px;
@@ -31,27 +30,24 @@
   position: fixed;
   height: calc(100vh + 50px);
   width: 300px;
-  background-color: rgb(134, 218, 166);
-  border-right: solid medium rgb(127, 207, 158);
+  background: linear-gradient(45deg, rgb(199, 231, 215) 50%, rgb(74, 211, 181));
+  border-right: solid medium rgb(86, 148, 148);
 }
 .mypage-main{
   &__you{
     font-size: 50px;
-    padding: 70px 0 20px 0;
+    padding: 70px 0 0 0;
     text-align: center;
-    color: rgb(238, 234, 234);
-    border-bottom: solid medium rgb(127, 207, 158);
+    color: rgb(242, 247, 247);
   }
   &__icon{
-    padding: 50px 50px 60px;
-    border-bottom: solid medium rgb(127, 207, 158);
+    padding: 30px 50px 60px;
   }
 }
 .footer {
   height: 50px;
   width: 100%;
   background-color: rgb(30, 143, 114);
-  border-top: solid 3px rgb(23, 114, 91);
   position: fixed;
   bottom: 0;
 }
