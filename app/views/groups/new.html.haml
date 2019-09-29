@@ -1,7 +1,9 @@
 .main
   .new-group
     .new-group__message
-      知らない誰かとランダムでグループを作ります
+      どこかのだれかとランダムでグループを作ります
+      %br/ 
+      グループの名前を決めてください
     .new-group__form
       = form_with model: @group do |f|
         - @users.each do |user|

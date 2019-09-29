@@ -21,5 +21,26 @@
     padding-top: 25%;
   }
   }
+  .new-group{
+    &__message{
+      text-align: center;
+      color: rgb(18, 124, 106);
+      font-size: 30px;
+      padding: 20vh 0 0 0;
+      line-height: 80px;
+    }
+    &__form{
+      padding: 0 30% 0 25%;
+    }
+    #group_name{
+      margin: 20px; 
+    }
+  }
+
+
+
+
+
+
 
 }
