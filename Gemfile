@@ -66,3 +66,4 @@ gem 'erb2haml'
 gem "bootstrap-sass"
 gem 'jquery-rails'
 gem "font-awesome-rails"
+gem "pry-rails"

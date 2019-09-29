@@ -4,5 +4,10 @@
       知らない誰かとランダムでグループを作ります
     .new-group__form
       = form_with model: @group do |f|
-        = f.hidden_field :user_id, :value => current_user.id
+        - @users.each do |user|
+          %input{:name => "group[user_ids][]", :type => "hidden", :value => user.id}/
+        %input{:name => "group[user_ids][]", :type => "hidden", :value => current_user.id}/
+        = f.text_area :name
         = f.submit value: "作成", class: "btn"
+
+        -# %input{:name => "group[user_ids][]", :type => "hidden", :value => current_user.id}/
