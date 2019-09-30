@@ -5,9 +5,9 @@
       %br/ 
       グループの名前を決めてください
     .new-group__form
-      = form_with model: @group do |f|
+      = form_with model: @group, local: true do |f|
         - @users.each do |user|
           %input{:name => "group[user_ids][]", :type => "hidden", :value => user.id}/
         %input{:name => "group[user_ids][]", :type => "hidden", :value => current_user.id}/
         = f.text_area :name
-        = f.submit value: "作成", class: "btn"
+        = f.submit value: "作成",class: "btn"
