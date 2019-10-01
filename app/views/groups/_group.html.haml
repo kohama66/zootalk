@@ -3,3 +3,5 @@
   = image_tag group.last_user_icon, :size =>'300x300', class: "main__groups--icon"
   .main__groups--name
     =link_to group.name, "/groups/#{group.id}/messages"
+  .timer
+    = "グループ解散まで後 #{group.time} 時間"

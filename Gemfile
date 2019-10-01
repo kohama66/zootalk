@@ -67,3 +67,4 @@ gem "bootstrap-sass"
 gem 'jquery-rails'
 gem "font-awesome-rails"
 gem "pry-rails"
+gem 'whenever', require: false
