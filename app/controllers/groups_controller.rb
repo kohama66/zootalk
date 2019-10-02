@@ -3,8 +3,8 @@ class GroupsController < ApplicationController
   def index
     if user_signed_in?
       user = current_user 
-      @group = user.groups
-    end  
+      @group = user.groups.where("time > 0")
+    end
   end
 
   def new

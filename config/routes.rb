@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   resources :groups, only: [:new, :index, :create] do
     resources :messages, only: [:index, :new, :create]
   end
+  namespace :api do
+    resources :groups, only: :index, defaults: { format: 'json' }
+  end
 end

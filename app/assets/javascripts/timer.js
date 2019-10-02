@@ -1,15 +1,23 @@
 $(document).on('turbolinks:load', function(){
 $(function(){
   
-  deleteGroup = function(){
-    // time = $(".timer").text();
-    // // htime = time.getHours();
-    // time.strftime("%Y-%m-%d %H:%M:%S")
-    // console.log(time);
-  }
+  // deleteGroup = function(){
+  //   $.ajax({
+  //     url: "api/groups",
+  //     post: "GET",
+  //     dataType: "json",
+  //     // data: { time: time }
+  //   })
+  //   .done(function(datas){
+  //     console.log("ok");
+  //   })
+  //   .fail(function(){
+  //     console.log("ng");
+  //   })
+  // }
 
-  setInterval(deleteGroup, 2000);
-
+  // setInterval(deleteGroup, 2000);
+  setTimeout("location.reload()",60000);
 
 
 
