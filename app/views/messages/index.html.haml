@@ -5,4 +5,9 @@
     %label(for="message-form__botton" class="message-form__botton--icon")
       = fa_icon 'paw' 
     = f.submit class: "message-form__botton", id: "message-form__botton"
+.frends
+  - @members.each do |member|
+    - if member != current_user 
+      .btn-flat
+        = image_tag member.icon.image,:size =>'50x50',class: "frends__icon" 
       

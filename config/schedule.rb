@@ -7,10 +7,10 @@ set :environment, :development
 # every 1.minute do 
 #   rake "delete_group:time"
 # end 
-every 1.minutes do
+every 1.hours do
   begin
     rake "delete_group:time"
   rescue => e
     raise e
-  end
+  end  
 end

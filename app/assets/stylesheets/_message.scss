@@ -36,3 +36,17 @@
   }
   }
 }
+.frends{
+  position: fixed;
+  z-index: 1;
+  bottom: 12px;
+  right: 30px;
+  &__icon{
+    position: absolute;
+    left: 0;
+  }
+}
+.btn-flat{
+  position: relative;
+  width: 40px;
+}

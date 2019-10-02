@@ -17,7 +17,7 @@ $(function(){
   // }
 
   // setInterval(deleteGroup, 2000);
-  setTimeout("location.reload()",60000);
+  setTimeout("location.reload()",600000);
 
 
 
