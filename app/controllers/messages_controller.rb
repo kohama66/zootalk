@@ -10,7 +10,9 @@ class MessagesController < ApplicationController
     @members = @group.users
     respond_to do |format|
       format.html
-      format.json
+      format.json {
+        @point = User.find(params[:id])
+      }
     end
   end  
 

@@ -10,8 +10,8 @@ $(function(){
       dataType: "json",
       data: { id: user_id }
     })
-    .done(function(){
-      console.log("ok");
+    .done(function(data){
+      console.log(data.id);
     })
     .fail(function(){
       console.log("ng");
