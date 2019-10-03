@@ -8,7 +8,7 @@ class Group < ApplicationRecord
       last_user_icon = messages.last
       last_user_icon.user.icon.image
     else
-      "dog.png"
+      "nomessage.png"
     end  
   end
 end

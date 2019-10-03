@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.htm
   root to: "groups#index"
 
-  resources :users, only: [:new] 
+  resources :users, only: [:new] do
+    resources :points, only: [:create]
+  end
   resources :groups, only: [:new, :index, :create] do
     resources :messages, only: [:index, :new, :create]
   end
