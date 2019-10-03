@@ -9,5 +9,5 @@
   - @members.each do |member|
     - if member != current_user 
       .btn-flat
-        = image_tag member.icon.image,:size =>'50x50',class: "frends__icon" 
+        = image_tag member.icon.image,:size =>'50x50',class: "frends__icon", id: member.id
       
