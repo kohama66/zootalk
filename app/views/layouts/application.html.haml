@@ -28,7 +28,8 @@
         .mypage-main__group
           = link_to "グループを作る", new_group_path if user_signed_in?
           %br/
-          あなたのポイントは
-          %br/
-          #{current_user.point.point}
+          - if user_signed_in?
+            あなたのポイントは
+            %br/
+            #{current_user.point.point}
     .footer

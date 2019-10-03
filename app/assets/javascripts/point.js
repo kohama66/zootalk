@@ -5,16 +5,15 @@ $(function(){
     let user_id = $(this).attr("id");
     let point = 1
     $.ajax({
-      url: "/users/edit",
-      post: "GET",
+      url: "/points",
+      type: "POST",
       dataType: "json",
-      data: { 
-        id: user_id, 
-        point: point
-        }
+      data: {
+        id: user_id
+      }
     })
-    .done(function(data){
-      console.log(data);
+    .done(function(){
+      console.log("ok");
     })
     .fail(function(){
       console.log("ng");

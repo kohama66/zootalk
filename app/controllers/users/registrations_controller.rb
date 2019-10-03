@@ -16,16 +16,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # GET /resource/edit
-  def edit
-    respond_to do |format|
-      format.html
-      format.json {
-        @group = Group.find(params[:id])
-        @group.update!( name: "GGG" )
-      }
-    end    
-    super
-  end
+  # def edit
+  #   super
+  # end
 
   # PUT /resource
   # def update
