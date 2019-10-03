@@ -17,10 +17,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/edit
   def edit
-    @user = User.find(params[:id])
     respond_to do |format|
       format.html
-      format.json 
+      format.json {
+        @group = Group.find(params[:id])
+        @group.update!( name: "GGG" )
+      }
     end    
     super
   end
