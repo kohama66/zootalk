@@ -4,4 +4,6 @@
   .main__groups--name
     =link_to group.name, "/groups/#{group.id}/messages"
   .timer
-    = "グループ解散まで後#{group.time}時間"
+    グループ解散まで
+    %br/
+    =  "あと#{group.time}時間"
