@@ -8,5 +8,5 @@ class User < ApplicationRecord
   has_many :groups, through: :group_users   
   belongs_to :icon   
   has_many :messages 
-  has_one :point
+  belongs_to :point, optional: true
 end
