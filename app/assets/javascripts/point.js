@@ -3,12 +3,15 @@ $(function(){
 
   $(".frends__icon").on("click", function(){
     let user_id = $(this).attr("id");
-    let url = location.href
+    let point = 1
     $.ajax({
-      url: url,
-      post: "get",
+      url: "/users/edit",
+      post: "GET",
       dataType: "json",
-      data: { id: user_id }
+      data: { 
+        id: user_id, 
+        point: point
+        }
     })
     .done(function(data){
       console.log(data.id);

@@ -8,12 +8,6 @@ class MessagesController < ApplicationController
     @messages = @group.messages.includes(:user)
     @message = Message.new
     @members = @group.users
-    respond_to do |format|
-      format.html
-      format.json {
-        @point = User.find(params[:id])
-      }
-    end
   end  
 
   def create
