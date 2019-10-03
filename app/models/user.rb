@@ -8,4 +8,5 @@ class User < ApplicationRecord
   has_many :groups, through: :group_users   
   belongs_to :icon   
   has_many :messages 
+  belongs_to :point
 end

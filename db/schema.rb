@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_03_064425) do
+ActiveRecord::Schema.define(version: 2019_10_03_072322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,10 +51,8 @@ ActiveRecord::Schema.define(version: 2019_10_03_064425) do
 
   create_table "points", force: :cascade do |t|
     t.integer "point"
-    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_points_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -66,8 +64,10 @@ ActiveRecord::Schema.define(version: 2019_10_03_064425) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "icon_id"
+    t.bigint "point_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["icon_id"], name: "index_users_on_icon_id"
+    t.index ["point_id"], name: "index_users_on_point_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
@@ -75,6 +75,6 @@ ActiveRecord::Schema.define(version: 2019_10_03_064425) do
   add_foreign_key "group_users", "users"
   add_foreign_key "messages", "groups"
   add_foreign_key "messages", "users"
-  add_foreign_key "points", "users"
   add_foreign_key "users", "icons"
+  add_foreign_key "users", "points"
 end

@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   root to: "groups#index"
 
   resources :users, only: [:new]
+  resources :points, only: [:create]  
+   
   resources :groups, only: [:new, :index, :create] do
     resources :messages, only: [:index, :new, :create]
   end
