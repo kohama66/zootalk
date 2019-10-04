@@ -15,8 +15,8 @@ $(function(){
         group_id: group_id
       }
     })
-    .done(function(data){
-      console.log(data);
+    .done(function(){
+      console.log("ok");
     })
     .fail(function(){
       console.log("ng");
