@@ -1,4 +1,4 @@
-.main
+.main{"data-id" => "#{@group.id}"}
   = render partial: "message", collection: @messages
   = form_with model: [@group,@message],class: "message-form",local: true do |f|
     = f.text_area :messages, placeholder: "メッセージを入れてね", class: "message-form__field"

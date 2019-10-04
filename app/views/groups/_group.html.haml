@@ -1,5 +1,4 @@
 .main__groups
-  -# = image_tag "dog.png", :size =>'300x300', class: "main__groups--icon"
   = image_tag group.last_user_icon, :size =>'300x300', class: "main__groups--icon"
   .main__groups--name
     =link_to group.name, "/groups/#{group.id}/messages"
