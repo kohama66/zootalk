@@ -10,5 +10,5 @@
           %input{:name => "group[user_ids][]", :type => "hidden", :value => user.id}/
         %input{:name => "group[user_ids][]", :type => "hidden", :value => current_user.id}/
         %input{:name => "group[time]", :type => "hidden", :value => 24}/
-        = f.text_area :name
+        = f.text_area :name, placeholder: "グループの名前を入れてください", class: "group-form-text"
         = f.submit value: "作成",class: "btn"
