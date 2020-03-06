@@ -1,0 +1,57 @@
+.main {
+  
+  background: linear-gradient(to bottom, rgb(242, 250, 247) 50%, rgb(134, 228, 228));
+  height: 100vh;
+  width: calc(100% - 300px);
+  float: right;
+  margin: 50px 0 50px 0;
+  overflow: scroll;
+  &__groups{
+    height: 50%;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    float: left;
+    font-weight: bold;
+    font-size: 25px;
+  &--icon{
+    padding: 50px 30px 0 40px;
+    float: left;
+  }
+  &--name{
+    padding-top: 25%;
+  }
+  }
+  .new-group{
+    &__message{
+      text-align: center;
+      color: rgb(18, 124, 106);
+      font-size: 30px;
+      padding: 20vh 0 0 0;
+      line-height: 80px;
+    }
+    &__form{
+      padding: 0 30% 0 25%;
+    }
+    .group-form-text{
+      font-size: 18px;
+      padding: 10px;
+      background-color: rgb(236, 243, 240);
+    }
+    #group_name{
+      margin: 20px; 
+    }
+  }
+  .create-group{
+    text-align: center;
+    color: rgb(18, 124, 106);
+    font-size: 30px;
+    padding: 20vh 0 0 0;
+    line-height: 80px;
+  }
+
+
+
+
+
+
+}

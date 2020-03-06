@@ -1,0 +1,13 @@
+.main{"data-id" => "#{@group.id}"}
+  = render partial: "message", collection: @messages
+  = form_with model: [@group,@message],class: "message-form",local: true do |f|
+    = f.text_area :messages, placeholder: "メッセージを入れてね", class: "message-form__field"
+    %label(for="message-form__botton" class="message-form__botton--icon")
+      = fa_icon 'paw' 
+    = f.submit class: "message-form__botton", id: "message-form__botton"
+.frends
+  - @members.each do |member|
+    - if member != current_user 
+      .btn-flat
+        = image_tag member.icon.image,:size =>'50x50',class: "frends__icon", id: member.id
+      

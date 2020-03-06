@@ -1,0 +1,111 @@
+.main
+  .new-user-main
+    新規ユーザー登録画面
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = render "devise/shared/error_messages", resource: resource
+    .field
+      = f.label :メールアドレス
+      %br/
+      = f.email_field :email, autofocus: true, autocomplete: "email"
+    .field
+      = f.label :password
+      - if @minimum_password_length
+        %em
+          (#{@minimum_password_length} characters minimum)
+      %br/
+      = f.password_field :password, autocomplete: "new-password"
+    .field
+      = f.label :password_confirmation
+      %br/
+      = f.password_field :password_confirmation, autocomplete: "new-password"
+    .radio-button
+      = f.radio_button :icon_id, 1
+      = f.radio_button :icon_id, 2
+      = f.radio_button :icon_id, 3
+      = f.radio_button :icon_id, 4
+      = f.radio_button :icon_id, 5
+    .actions
+      = f.submit "Sign up", class: "btn btn-primary"
+    .icon-message
+      好きなアイコンを選んでください
+  .icon-select
+    = image_tag "dog.png", :size =>'200x200', id: 1
+    = image_tag "cat.png", :size =>'200x200', id: 2
+    = image_tag "fox.png", :size =>'200x200', id: 3
+    = image_tag "bird.png", :size =>'200x200', id: 4
+    = image_tag "elf.png", :size =>'200x200', id: 5    
+.popup1
+  .popup1__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは いぬ でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_1"  class="white-text")
+              はい
+            %label(for="" class="white-text")  
+              いいえ        
+.popup2
+  .popup2__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは ねこ でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_2"  class="white-text")
+              はい
+            %label(for="" class="white-text")  
+              いいえ                
+.popup3
+  .popup3__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは きつね でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_3"  class="white-text")
+              はい
+            %label(for="" class="white-text")  
+              いいえ                
+.popup4
+  .popup4__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは 小鳥 でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_4"  class="white-text")
+              はい
+            %label(for="" class="white-text")  
+              いいえ        
+.popup5
+  .popup5__message
+    .row
+      .col.s12.m6
+        .card.blue-grey
+          .card-content.white-text
+            %p
+              アイコンは ぞう でよろしいですか？
+            %p
+              後から変更することは出来ません
+          .card-action
+            %label(for="user_icon_id_5" class="white-text")
+              はい
+            %label(for="" class="white-text")  
+              いいえ                                               

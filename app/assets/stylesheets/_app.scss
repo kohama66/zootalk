@@ -1,0 +1,58 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(30, 143, 114);
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+}
+.title{
+  color: rgb(238, 234, 234);
+  font-size: 40px;
+  line-height: 50px; 
+  }
+.new-user{
+  color: rgb(238, 234, 234);
+  font-size: 20px;
+  line-height: 50px;
+  position: absolute;
+  left: 30px;
+  }
+.login{
+  color: rgb(238, 234, 234);
+  font-size: 15px;
+  line-height: 50px;
+  position: absolute;
+  right: 30px;
+}  
+.mypage {
+  position: fixed;
+  height: calc(100vh + 50px);
+  width: 300px;
+  background: linear-gradient(45deg, rgb(199, 231, 215) 50%, rgb(74, 211, 181));
+  border-right: solid medium rgb(86, 148, 148);
+}
+.mypage-main{
+  &__you{
+    font-size: 50px;
+    padding: 70px 0 0 0;
+    text-align: center;
+    color: rgb(242, 247, 247);
+  }
+  &__icon{
+    padding: 30px 50px 60px;
+  }
+  &__group{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(30, 143, 114);
+  position: fixed;
+  bottom: 0;
+}

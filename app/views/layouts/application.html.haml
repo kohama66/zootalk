@@ -1,0 +1,35 @@
+!!!
+%html
+  %head
+    %script{:crossorigin => "anonymous", :integrity => "sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=", :src => "https://code.jquery.com/jquery-3.4.1.js"}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Zootalk
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    / Compiled and minified CSS
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css", :rel => "stylesheet"}/
+    / Compiled and minified JavaScript
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
+  %body
+    .header
+      =link_to "新規登録", new_user_registration_path, class: "new-user" unless user_signed_in?
+      =link_to "ログアウト", destroy_user_session_path, method: :delete, class: "new-user" if user_signed_in?
+      =link_to "zooTalk", "/", class: "title"
+      =link_to "ログイン", new_user_session_path, class: "login"
+    = yield
+    .mypage
+      .mypage-main
+        .mypage-main__you
+          YOU
+        .mypage-main__icon
+          = image_tag current_user.icon.image, :size =>'200x200'  if user_signed_in?
+        .mypage-main__group
+          = link_to "グループを作る", new_group_path if user_signed_in?
+          %br/
+          - if user_signed_in?
+            あなたのポイントは
+            %br/
+            = "#{current_user.point.point}pt"
+    .footer

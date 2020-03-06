@@ -1,0 +1,52 @@
+.message{
+  height: 120px;
+  border-bottom: dashed thin gray;
+  border-color: rgb(169, 197, 197); 
+  
+  &__user-icon{
+    padding: 10px 30px 10px 10px; 
+    float: left;
+  }
+  &__content{
+    line-height: 120px;
+    font-weight: normal;
+    font-size: 25px;
+    overflow: auto;
+  }
+}
+.message-form{
+  position: fixed;
+  left: 30%;
+  bottom: -2px;
+  z-index: 1;
+  font-size: 22px;
+  &__field{
+    height: 38px;
+    width: 500px;
+    background-color: white;
+  }
+  &__botton{
+    display: none;
+  &--icon{
+    color: rgb(235, 114, 15);
+    position: absolute;
+    right: -40px; 
+    font-size: 30px;
+    cursor: pointer;
+  }
+  }
+}
+.frends{
+  position: fixed;
+  z-index: 1;
+  bottom: 12px;
+  right: 30px;
+  &__icon{
+    position: absolute;
+    left: 0;
+  }
+}
+.btn-flat{
+  position: relative;
+  width: 40px;
+}
